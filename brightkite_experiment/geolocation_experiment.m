@@ -162,7 +162,7 @@ for rep = 1:n_reps
             for i = 1:n_pred
                 user = uncertain_locs(i);
                 % Take neighbor locations as candidate locations
-                neigh_idxs = find(G_te(:,ser));
+                neigh_idxs = find(G_te(:,user));
                 neighbor_distributions = {};
                 candidate_locations = [];
                 for j = 1:length(neigh_idxs)
